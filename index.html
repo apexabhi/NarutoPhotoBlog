@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NarutoPhotoBlog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/js/my.js"></script>
+</head>
+<body>
+    <nav>NARUTO / うずまき ナルト </nav>
+   
+    <img src="images/naruto11.jpg" alt="sry cant load"><img src="images/naruto99.jpg" alt="sry cant load"><img src="images/naruto33.jpg" alt="sry cant load">
+    
+    <img src="images/naruto88.jpg" alt="sry cant load"><img src="images/naruto44.jpg" alt="sry cant load"><img src="images/naruto66.jpg" alt="sry cant load">
+
+    <img src="images/naruto77.jpg" alt="sry cant load"><img src="images/naruto22.jpg" alt="sry cant load"><img src="images/naruto55.jpg" alt="sry cant load">
+
+    <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script>
+        $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+</body>
+</html>

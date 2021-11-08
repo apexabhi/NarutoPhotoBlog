@@ -1,0 +1,152 @@
+body{
+    background: rgb(244,232,237);
+    background: radial-gradient(circle, rgba(244,232,237,1) 49%, rgba(203,181,181,1) 87%);
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 30%;
+    margin: calc(9.5%/6);
+    transition: all 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   
+}
+
+
+nav {
+    width: 30%;
+    margin: calc(10%/6);
+    border-bottom: 2px solid #ffb703;
+    padding: 20px 0;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    color: #ae2012;
+    
+}
+
+
+img:nth-of-type(1):hover{
+    content: url("images/naruto1.jpg");
+    transform: translateY(-20px);
+    border-bottom: 7px solid #fdffb6;
+    box-shadow: 3px 3px #ee9b00, -1em 0 .4em #fb8500;
+    
+    
+    
+}
+
+img:nth-of-type(2):hover{
+    content: url("images/naruto9.jpg");
+    transform: translateY(-20px);
+    border-bottom: 7px solid #fdffb6;
+    box-shadow: 3px 3px #ee9b00, -1em 0 .4em #fb8500;
+}
+
+img:nth-of-type(3):hover{
+    content: url("images/naruto3.jpg");
+    transform: translateY(-20px);
+    border-bottom: 7px solid #fdffb6;
+    box-shadow: 3px 3px #ee9b00, -1em 0 .4em #fb8500;
+}
+
+img:nth-of-type(4):hover{
+    content: url("images/naruto8.jpg");
+    transform: translateY(-20px);
+    border-bottom: 7px solid #fdffb6;
+    box-shadow: 3px 3px #ee9b00, -1em 0 .4em #fb8500;
+}
+
+img:nth-of-type(5):hover{
+    content: url("images/naruto4.jpg");
+    transform: translateY(-20px);
+    border-bottom: 7px solid #fdffb6;
+    box-shadow: 3px 3px #ee9b00, -1em 0 .4em #fb8500;
+}
+
+img:nth-of-type(6):hover{
+    content: url("images/naruto6.jpg");
+    transform: translateY(-20px);
+    border-bottom: 7px solid #fdffb6;
+    box-shadow: 3px 3px #ee9b00, -1em 0 .4em #fb8500;
+}
+
+img:nth-of-type(7):hover{
+    content: url("images/naruto7.jpg");
+    transform: translateY(-20px);
+    border-bottom: 7px solid #fdffb6;
+    box-shadow: 3px 3px #ee9b00, -1em 0 .4em #fb8500;
+}
+
+img:nth-of-type(8):hover{
+    content: url("images/naruto2.jpg");
+    transform: translateY(-20px);
+    border-bottom: 7px solid #fdffb6;
+    box-shadow: 3px 3px #ee9b00, -1em 0 .4em #fb8500;
+}
+
+img:nth-of-type(9):hover{
+    content: url("images/naruto5.jpg");
+    transform: translateY(-20px);
+    border-bottom: 7px solid #fdffb6;
+    box-shadow: 3px 3px #ee9b00, -1em 0 .4em #fb8500;
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #fff;
+    animation: loader 1s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 1s infinite ease-in;
+}
+
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
+
+@media(max-width:1150px){
+     img{
+         width: 80%;
+         margin: calc(20%/2);
+     }
+     nav{
+         font-size: 20px;
+     }
+}
+
+@media(max-width:858px){
+
+     nav{
+         font-size: 5px;
+     }
+}
